@@ -1,0 +1,32 @@
+{
+  "name": "ec2-publicip",
+  "version": "1.0.0",
+  "description": "Retrieve EC2 instance public ip",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manikandants/node-ec2-publicip.git"
+  },
+  "keywords": [
+    "ec2",
+    "aws",
+    "publicip",
+    "elasticip",
+    "instance",
+    "amazon"
+  ],
+  "author": "Manikandan TS <manikandan.citeee@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manikandants/node-ec2-publicip/issues"
+  },
+  "homepage": "https://github.com/manikandants/node-ec2-publicip#readme",
+  "dependencies": {
+    "async": "^1.5.2",
+    "ip": "^1.1.1",
+    "request": "^2.69.0"
+  }
+}
