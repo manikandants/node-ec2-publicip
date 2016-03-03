@@ -1,6 +1,6 @@
 # node-ec2-publicip
 
-Retrieve EC2 public-ipv4 from instance metadata
+Retrieve EC2 public-ipv4 from instance metadata.
 
 Note: this assumes that a metadata service is available at http://169.254.169.254/. Thus it works on EC2 instances, behavior on other machines is undefined.
 
@@ -26,11 +26,11 @@ Note: this assumes that a metadata service is available at http://169.254.169.25
 ## Details
 
 Public IPV4 of Amazon EC2 instances can be retrieved via http GET calls to http://169.254.169.254/latest/meta-data
-This module gets the public IPV4 from meta-data api
+This module gets the public IPV4 from meta-data api.
 
 ## Change Log
-
-- 1.0.0: Basic getPublicIP with timeout error
+- 1.0.1: Added documentation.
+- 1.0.0: Basic getPublicIP with timeout error.
 
 ## License
 
