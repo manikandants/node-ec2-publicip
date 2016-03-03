@@ -3,7 +3,7 @@ var async = require('async');
 var ip = require('ip');
 
 exports.getPublicIP = function(callback) {
-	var url = 'http://169.254.169.254/latest/meta-data';
+	var url = 'http://169.254.169.254/latest/meta-data/public-ipv4';
 	var count = 5;
 	var publicIP;
 	if (!callback) {
@@ -16,10 +16,9 @@ exports.getPublicIP = function(callback) {
 				return fn('timedout');
 			}
 			if (!err && response.statusCode == 200) {
-				console.log(body);
-			} else {
-				return fn(null);
+				publicIP = body;
 			}
+			return fn(null);
 		});
 	},
 	function() {
