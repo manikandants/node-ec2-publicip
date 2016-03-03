@@ -13,7 +13,10 @@ exports.getPublicIP = function(callback) {
 		request.get(url, function(err, response, body) {
 			count--;
 			if (count < 0) {
-				return fn('timedout');
+				return fn({
+					code: 1,
+					message: 'Server Timeout'
+				});
 			}
 			if (!err && response.statusCode == 200) {
 				publicIP = body;
@@ -28,7 +31,3 @@ exports.getPublicIP = function(callback) {
 		callback(err, publicIP)
 	});
 };
-
-exports.getPublicIP(function(err, ip) {
-	console.log(err, ip);
-});
