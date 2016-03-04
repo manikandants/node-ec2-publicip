@@ -29,6 +29,7 @@ Public IPV4 of Amazon EC2 instances can be retrieved via http GET calls to http:
 This module gets the public IPV4 from meta-data api.
 
 ## Change Log
+- 1.0.2: Added [example](https://tonicdev.com/npm/ec2-publicip).
 - 1.0.1: Added documentation.
 - 1.0.0: Basic getPublicIP with timeout error.
 
