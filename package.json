@@ -1,6 +1,6 @@
 {
   "name": "ec2-publicip",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Retrieve EC2 instance public ip",
   "main": "index.js",
   "scripts": {
@@ -25,9 +25,9 @@
   },
   "homepage": "https://github.com/manikandants/node-ec2-publicip#readme",
   "dependencies": {
-    "async": "1.5.2",
-    "ip": "1.1.2",
-    "request": "2.72.0"
+    "async": "^2.1.4",
+    "ip": "^1.1.4",
+    "request": "^2.79.0"
   },
   "tonicExampleFilename": "example.js"
 }
