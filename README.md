@@ -1,5 +1,7 @@
 # node-ec2-publicip
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/manikandants/node-ec2-publicip.svg)](https://greenkeeper.io/)
+
 Retrieve EC2 public-ipv4 from instance metadata.
 
 Note: this assumes that a metadata service is available at http://169.254.169.254/. Thus it works on EC2 instances, behavior on other machines is undefined.
